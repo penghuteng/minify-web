@@ -1,0 +1,52 @@
+{
+  "name": "minify-web",
+  "version": "1.0.5",
+  "description": "web app minify",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "penghuteng@hotmail.com",
+  "homepage": "github.com/penghuteng/minify-web",
+  "keywords": [
+    "minify",
+    "minify-web",
+    "zip"
+  ],
+  "bin": {
+    "minify-web": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "language"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "build": "yarn clean && tsc",
+    "test": "yarn build && node dist/index.js"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/del": "^4.0.0",
+    "@types/gulp": "^4.0.17",
+    "@types/gulp-clean-css": "^4.3.4",
+    "@types/gulp-htmlmin": "^1.3.36",
+    "@types/gulp-uglify": "^3.0.11",
+    "@types/node": "^20.12.7",
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
+}
