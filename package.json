@@ -1,7 +1,7 @@
 {
   "name": "minify-web",
-  "version": "1.0.6",
-  "description": "web app minify",
+  "version": "1.0.7",
+  "description": "Compress all html, js, and css files in the entire folder, and output other files to the specified directory without processing",
   "main": "index.js",
   "license": "MIT",
   "author": "penghuteng@hotmail.com",
