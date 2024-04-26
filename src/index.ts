@@ -32,7 +32,11 @@ if (!rootdir.startsWith("/")) {
   rootdir = path.join(process.cwd(), rootdir)
 }
 if (!fs.existsSync(rootdir)) {
-  console.error(`Folder not found: ${rootdir}${options.dir === "src" ? "You can set the --dir setting and directory" : ""}`)
+  console.error(`Folder not found: ${rootdir}`)
+  if(options.dir === "src"){
+    console.error("You can set the --dir setting and directory")
+  }
+  console.error()
   process.exit(1)
 }
 
