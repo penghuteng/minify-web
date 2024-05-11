@@ -33,8 +33,9 @@ if (!rootdir.startsWith("/")) {
 }
 if (!fs.existsSync(rootdir)) {
   console.error(`Folder not found: ${rootdir}`)
+  console.error()
   if(options.dir === "src"){
-    console.error("You can set the --dir setting and directory")
+    console.error("You can set the -D or --dir setting and directory")
   }
   console.error()
   process.exit(1)
