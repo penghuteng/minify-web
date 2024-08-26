@@ -4,7 +4,7 @@ Compress all html, js, and css files in the entire folder, and output other file
 
 ## Language
 
-[中文](./README-zh_CN.md)
+[中文](https://www.npmjs.com/package/minify-web/README-zh_CN.md)
 
 ## Installation
 
