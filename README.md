@@ -4,7 +4,7 @@ Compress all html, js, and css files in the entire folder, and output other file
 
 ## Language
 
-[中文](./README.zh-CN.md)
+[中文](./README-zh-CN.md)
 
 ## Installation
 
